@@ -1,0 +1,32 @@
+<div class="body">
+    <div class="header">
+        <h1 style="text-align: center;">Washapp.</h1>
+    </div>
+    <div class="section">
+        <div class="container">
+
+            <div class="login-form" >
+                <div class="inputt">
+                    <form action="" [formGroup]="profileForm" (submit)="addToDb()" >
+                        <div class="inputs">
+                            <label for="" style="color: black;font-size: small;">Username</label> <br>
+                            <input type="text" class="input" name="username" formControlName="username"> <br>
+                            <label for="" style="color: black;font-size: small;">Password</label> <br>
+                            <input type="password" class="input" name="password" formControlName="password">
+                        </div>
+
+                        <div class="button">
+                            <!-- <button class="btn" (click)="addToDb()">Login</button> -->
+                            <input class="btn" type="submit" value="login" >
+                        </div>
+
+                    </form>
+                   
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>

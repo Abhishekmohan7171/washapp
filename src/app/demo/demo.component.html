@@ -1,0 +1,75 @@
+<!-- <app-nav></app-nav> -->
+
+<div class="body">
+    <div class="nav">
+        <!-- <app-nav></app-nav> -->
+        <div class="nav-one">
+            <div class="logo">
+                <h1 routerLink="">Washapp.</h1>
+            </div>
+            <div class="nav-items">
+
+                <p>Services</p>
+
+                <p>About Us</p>
+
+                <p>Contact Us</p>
+
+                <p>My Account</p>
+            </div>
+            <!-- <div class="login">
+                <button routerLink="/login">Login</button>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="booking-form">
+            <div class="header">
+                <h2 style="font-weight: 500;"> Book your slot now !</h2>
+            </div>
+
+            <div class="form">
+                <form action="" (submit)="addToDb()" [formGroup]="bookingForm">
+
+                    <div class="field">
+                        <label for="" class="name">Location</label> <br>
+                        <select class="input" formControlName="location">
+                            <option  value="" *ngFor="let item of locations">{{item}}</option>
+                            <!-- <option value="">Guduvanchery</option>
+                        <option value="">Potheri</option>
+                        <option value="">MM Nagar</option>
+                        <option value="">Vandalur</option> -->
+                        </select> <br>
+                    </div>
+
+
+                    <div class="field">
+                        <label for="" class="name">Vehicle Type</label><br>
+                        <select class="input" formControlName="vehicle">
+                            <option value="" *ngFor="let item of vehicle" >{{item}}</option>
+                            <!-- <option value="">Guduvanchery</option>
+                        <option value="">Potheri</option>
+                        <option value="">MM Nagar</option>
+                        <option value="">Vandalur</option> -->
+                        </select> <br>
+                    </div>
+
+                    <div class="field">
+                        <label for="" class="name">Date</label> <br>
+                        <input type="date" name="" class="input" formControlName="date"> <br>
+                    </div>
+
+                    <div class="field">
+                        <label for="" class="name">Time Slot</label> <br>
+                        <input type="time" name="" class="input" formControlName="time"> <br>
+                    </div>
+
+                    <div class="button">
+                        <input type="submit" value="Confirm" class="btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
