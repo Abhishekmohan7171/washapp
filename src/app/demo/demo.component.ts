@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireDatabase } from '@angular/fire/compat/database';
-import { FormControl,FormGroup} from '@angular/forms';
+import { FormControl,FormGroup,Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-demo',
@@ -16,15 +16,24 @@ export class DemoComponent implements OnInit {
   vehicle = ["","Car","Bike"];
 
   bookingForm = new FormGroup({
-    location:new FormControl(''),
-    vehicle:new FormControl(''),
-    date:new FormControl(''),
-    time:new FormControl(''),
+    location:new FormControl('',[Validators.required]),
+    vehicle:new FormControl('',[Validators.required]),
+    date:new FormControl('',[Validators.required]),
+    time:new FormControl('',[Validators.required]),
   });
 
   addToDb(){
     console.log(this.bookingForm.value);
     this.db.database.ref('booking').push(this.bookingForm.value);
+  }
+
+  confirmDemo(){
+    // if( this.bookingForm.value = ""){
+    //   alert("Enter all values.")
+    // }else{
+      alert("Booked Successfully !")
+    // }
+    // alert("Booked Succesfully!!")
   }
 
 
