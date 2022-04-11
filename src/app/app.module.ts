@@ -17,6 +17,9 @@ import { DemoComponent } from './demo/demo.component';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 
+import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/compat/auth';
+
+
 
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -59,7 +62,8 @@ const firebaseConfig = {
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularFireAuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

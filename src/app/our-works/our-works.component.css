@@ -1,5 +1,6 @@
 .body{
-    background-color:#2F0F72;
+    /* background-color:#2F0F72; */
+    background-color: rgb(51, 48, 48);
     color: rgba(255, 255, 255, 0.900);
     /* color: rgba(0, 0, 0, 0.5); */
     /* display: flex; */
@@ -29,11 +30,22 @@
 
 .rect-1{
     width: 175px;
-height: 182px;
-/* left: 783px;
-top: 726px; */
+    height: 182px;
+    /* left: 783px;
+    top: 726px; */
+    background-color: rgb(27, 29, 34);
+    /* background: #FFFF; */
+    box-shadow: 0px 0px 15px 6px rgba(13, 229, 245, 0.6);
+    border-radius: 5px;
+    /* display: flex;
+    justify-content: center; */
+}
 
-background: #FFFF;
-box-shadow: 0px 0px 15px 6px rgba(13, 229, 245, 0.6);
-border-radius: 5px;
+.serv {
+    padding-top: 50%;
+    /* padding-left: 4%;
+    padding-right: 4%; */
+    text-align: center;
+    font-size: larger;
+    color: rgb(106, 230, 252);
 }

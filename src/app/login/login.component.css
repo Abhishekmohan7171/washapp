@@ -63,7 +63,8 @@
     /* font-family: 'Lato', sans-serif; */
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    background: radial-gradient(497.78% 2795.16% at 68.96% 48.89%, #2F0F72 7.82%, rgba(251, 250, 254, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* background: radial-gradient(497.78% 2795.16% at 68.96% 48.89%, #2F0F72 7.82%, rgba(251, 250, 254, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    background-color: rgb(5, 29, 71);
     border-radius: 6px;
     border:none;
     cursor: pointer;

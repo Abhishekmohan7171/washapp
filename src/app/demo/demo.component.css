@@ -1,9 +1,13 @@
+*{
+    overflow: hidden;
+}
+
 .body{
     background-color: #2F0F72;
     width: 100%;
     color: white;
-    /* overflow: hidden;
-    scrollbar-width: none; */
+    
+    /* scrollbar-width: none; */
     height: 100%;
     
 }

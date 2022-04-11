@@ -1,7 +1,7 @@
 .body{
     /* position:relative; */
     /* background-color: rgb(13, 214, 214); */
-    background-image: url('/assets/BG.png');
+    background-image: url('/assets/bg.png');
     /* width: 100%;
     height: 100%; */
     width:auto;
@@ -19,6 +19,7 @@
     margin-left: 4%;
     padding-top: 23%;
     padding-bottom: 15%;
+    display: flex;
 }
 
 
@@ -37,7 +38,8 @@
     height: 52px;
     /* left: 161px;
     top: 577px; */
-    background: radial-gradient(497.78% 2795.16% at 68.96% 48.89%, #2F0F72 7.82%, rgba(251, 250, 254, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    /* background: radial-gradient(497.78% 2795.16% at 68.96% 48.89%, #2F0F72 7.82%, rgba(251, 250, 254, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    background-color: rgb(5, 29, 71);
     border-radius: 6px;
     border: none;
     color:white;
@@ -54,12 +56,9 @@
 }
 
 .bubble img{
-    position: absolute;
     /* width: 944px; */
-    height: 90%;
-    width:45%;
     /* left: 572px; */
-    top: 35%;
+    width: 70%;
     /* padding-left: 60%; */
     opacity: 0.5;
 }

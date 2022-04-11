@@ -1,5 +1,6 @@
 .body {
-    background-color:#2F0F72;
+    /* background-color:#2F0F72; */
+    background-color: rgb(51, 48, 48);
     color: rgba(255, 255, 255, 0.900);
     padding-top:4%;
 }

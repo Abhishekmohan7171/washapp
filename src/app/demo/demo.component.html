@@ -35,7 +35,7 @@
                     <div class="field">
                         <label for="" class="name">Location</label> <br>
                         <select class="input" formControlName="location">
-                            <option  value="" *ngFor="let item of locations">{{item}}</option>
+                            <option  value="{{item}}" *ngFor="let item of locations">{{item}}</option>
                             <!-- <option value="">Guduvanchery</option>
                         <option value="">Potheri</option>
                         <option value="">MM Nagar</option>
@@ -47,7 +47,7 @@
                     <div class="field">
                         <label for="" class="name">Vehicle Type</label><br>
                         <select class="input" formControlName="vehicle">
-                            <option value="" *ngFor="let item of vehicle" >{{item}}</option>
+                            <option value="{{item}}" *ngFor="let item of vehicle" >{{item}}</option>
                             <!-- <option value="">Guduvanchery</option>
                         <option value="">Potheri</option>
                         <option value="">MM Nagar</option>
@@ -61,8 +61,8 @@
                     </div>
 
                     <div class="field">
-                        <label for="" class="name">Time Slot</label> <br>
-                        <input type="time" name="" class="input" formControlName="time"> <br>
+                        <label for="time" class="name">Time Slot</label> <br>
+                        <input type="time" id="time" class="input" formControlName="time"> <br>
                     </div>
 
                     <div class="button">
