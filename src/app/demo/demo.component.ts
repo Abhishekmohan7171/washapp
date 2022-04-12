@@ -34,6 +34,8 @@ export class DemoComponent implements OnInit {
       alert("Booked Successfully !")
     // }
     // alert("Booked Succesfully!!")
+
+    this.bookingForm.reset();
   }
 
 

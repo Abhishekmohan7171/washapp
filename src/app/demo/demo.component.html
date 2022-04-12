@@ -66,10 +66,11 @@
                     </div>
 
                     <div class="button">
-                        <input type="submit" value="Confirm" class="btn" (click) = "confirmDemo()">
+                        <input type="submit" value="Confirm" class="btn"  [disabled]="!bookingForm.valid" (click) = "confirmDemo()">
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
+

@@ -8,25 +8,25 @@ import { AngularFireDatabase } from '@angular/fire/compat/database';
 })
 export class PackagesComponent implements OnInit {
 
-  constructor(private db:AngularFireDatabase) { }
+  constructor(private db: AngularFireDatabase) { }
 
   whyus = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.";
 
 
   time = [{
-    Title:"Weekly",
-    Price:"1000",
-    Description:"Weekly based services"
+    Title: "Weekly",
+    Price: "1000",
+    Description: "Weekly based services"
   },
   {
-    Title:"Monthly",
-    Price:"5000",
-    Description:"Monthly based services"
+    Title: "Monthly",
+    Price: "5000",
+    Description: "Monthly based services"
   },
   {
-    Title:"Yearly",
-    Price:"10000",
-    Description:"Yearly based services"
+    Title: "Yearly",
+    Price: "10000",
+    Description: "Yearly based services"
   }
   ];
 
@@ -35,11 +35,11 @@ export class PackagesComponent implements OnInit {
   // }).catch((err)=>{
   //   console.log(err,"error")
   // });
-  
-  // this.db.database.ref('login').push(this.profileForm.value);
+
+
 
   ngOnInit(): void {
-    
+
   }
 
 }
