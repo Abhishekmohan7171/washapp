@@ -1,18 +1,25 @@
 <div class="body" id="services">
-    <div class="content">
+    <div class="content-image">
 
-        <h2 style="font-weight: 500;">HOW WE WORK?.</h2>
+        <div class="content">
 
-        <p>{{works}}</p>
+            <h2 style="font-weight: 500;">HOW WE WORK?.</h2>
 
-        <div class="scroll-img"></div>
+            <p>{{works}}</p>
+
+            <div class="scroll-img"></div>
+
+        </div>
+
+        
 
     </div>
+
 
     <div class="text-services">
         <h2 style="font-weight: 500; padding-top: 5%;text-align: center;">OUR SERVICES.</h2>
 
-        <div class="rects" >
+        <div class="rects">
             <div class="rect-1" *ngFor="let item of services;">
                 <h1 class="serv" style="font-weight: 200;">{{ item }}</h1>
             </div>

@@ -7,6 +7,10 @@
     padding-top: 4%;
 }
 
+.content-image{
+    display: flex;
+}
+
 .content{
     margin-left: 4%;
     
@@ -50,3 +54,4 @@
     font-size: larger;
     color: rgb(106, 230, 252);
 }
+
